@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Heart Disease Predictor</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	</head>
+
+    <body>
+
+   <div class="container">
+    <h2 class='container-heading'><span class="heading_font">Cardiac Disease Predictor</span></h2><br>
+    <div class='description'>
+      <p>A Machine Learning Web Application that predicts chances of having heart Disease or not, Built with Flask.</p><br>
+        <p><marquee>(Research Paper Implemented : Effective Machine Learning Based Technique for Cardiac Disease Prediction, where RF model gave highest accuracy of 98% )</marquee></p>
+    </div>
+  </div>
+
+		<!-- Result -->
+
+		<div class="results">
+			{% if prediction== 1 %}
+			<h1>Prediction: <span class='danger'>Sorry to say that! You have Chances of Heart Disease.</span></h1>
+				{% if selection==0 %}
+					<h3>Model Selected: <span class='danger'>K Nearest Neighbor</span></h3>
+					<h2>Model Accuracy: <span class='danger'>97.07%</span></h2>
+				{% endif %}
+
+			{% if selection==1 %}
+					<h3>Model Selected: <span class='danger'>Logistic Regression</span></h3>
+					<h2>Model Accuracy: <span class='danger'>84.39%</span></h2>
+					{% endif %}
+			{% if selection==2 %}
+					<h3>Model Selected: <span class='danger'>Support Vector Machine (SVM)</span></h3>
+					<h2>Model Accuracy: <span class='danger'>94.15%</span></h2>
+					{% endif %}
+			{% if selection==3 %}
+
+					<h3>Model Selected: <span class='danger'>Random Forest</span></h3>
+					<h2>Model Accuracy: <span class='danger'>98.0%</span></h2>
+					{% endif %}
+			{% if selection==4 %}
+					<h3>Model Selected: <span class='danger'>Decision Trees</span></h3>
+					<h2>Model Accuracy: <span class='danger'>85.36%</span></h2>
+					{% endif %}
+			{% endif %}
+
+
+
+			{% if prediction==0 %}
+				<h1>Prediction: <span class='safe'>Great! You DON'T have chances of Heart Disease.</span></h1>
+				{% if selection==0 %}
+					<h3>Model Selected: <span class='danger'>K Nearest Neighbor</span></h3>
+					<h2>Model Accuracy: <span class='danger'>97.07%</span></h2>
+				{% endif %}
+
+			{% if selection==1 %}
+					<h3>Model Selected: <span class='danger'>Logistic Regression</span></h3>
+					<h2>Model Accuracy: <span class='danger'>84.39%</span></h2>
+					{% endif %}
+			{% if selection==2 %}
+					<h3>Model Selected: <span class='danger'>Support Vector Machine (SVM)</span></h3>
+					<h2>Model Accuracy: <span class='danger'>94.15%</span></h2>
+					{% endif %}
+			{% if selection==3 %}
+
+					<h3>Model Selected: <span class='danger'>Random Forest</span></h3>
+					<h2>Model Accuracy: <span class='danger'>98.80%</span></h2>
+					{% endif %}
+			{% if selection==4 %}
+					<h3>Model Selected: <span class='danger'>Decision Trees</span></h3>
+					<h2>Model Accuracy: <span class='danger'>85.36%</span></h2>
+					{% endif %}
+				{% endif %}
+		</div>
+		<br>
+		<hr style="width: 50%; background-color: black; height : 4px; margin-bottom : 30px">
+
+		<div class = "results2">
+			<h3 style = "padding : 0px; margin : 5px; color:black;">Project Implemented by Verma Ayush,Vaidaant Thakur and Aryaman Surya</h3>
+			<h3 style = "padding : 0px;  margin : 5px;color : green">Under the guidance of Nagamma Patil</h3>
+			<h5 style = "padding : 0px ;  margin : 5px; color : green">(Associate Professor, IT Department NITK)</h5>
+
+		</div>
+		<!-- Footer -->
+       <div class='footer2'>
+           <p class='footer-description'>Made by Verma Ayush - 211IT079,Vaidaant Thakur - 211IT075 and Aryaman Surya - 211IT011.</p>
+       </div>
+
+	</body>
+</html>
