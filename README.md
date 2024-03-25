@@ -1,5 +1,4 @@
 # CardicDiseasesPrediction is name of project and its title is given as IT414
-# Madeby:VermaAyush,VaidaantThakur,AryamanSurya
 # Overview :
 A simple web application which uses Machine Learning algorithm to predict the heart condition of a person by providing some inputs about the person health like age, gender, blood pressure, cholesterol level etc built using Flask.
 # Demo of web application is:
@@ -20,3 +19,9 @@ Output webpage(After taking all 11 features we will going to test this features 
 
 out of 5 anyone can use and predict it after prediction the output is shown below:)
 ![WhatsApp Image 2024-03-19 at 10 17 50 PM](https://github.com/VermaAyush2k4/CardicDiseasesPrediction/assets/117018341/087c0cb9-c469-46c8-8db4-890414c0a635)
+
+SoftwareTools: VSCode,Pycharm,and python version should be installed
+
+Requirements:refer requirements.txt
+
+# You can refer reports for detailing of project how its works with proper user interface diagram.
