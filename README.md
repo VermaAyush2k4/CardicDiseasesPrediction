@@ -8,10 +8,14 @@ Input values of webpage is(In this we are taking 11 features input from uses and
 Output webpage(After taking all 11 features we will going to test this features with any one of model which selected above total 5 models are used in above:
 
 1)decicision Tree
+
 2)KNN
+
 3)Logistic Regression
+
 4)Random Forest
+
 5)SVM
+
 out of 5 anyone can use and predict it after prediction the output is shown below:)
 ![WhatsApp Image 2024-03-19 at 10 17 50 PM](https://github.com/VermaAyush2k4/CardicDiseasesPrediction/assets/117018341/087c0cb9-c469-46c8-8db4-890414c0a635)
-
